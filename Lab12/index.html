@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<style>
+    #acceptColor{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 250px;
+        bottom: 22px;
+        background-color: none;
+        border: 1px solid black;
+        overflow: hidden;
+        margin: 0px;
+    }
+    #acceptColor1{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 250px;
+        bottom: 22px;
+        background-color: none;
+        border: 1px solid black;
+        overflow: hidden;
+        margin: 0px;
+    }
+
+    #acceptColor2{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 250px;
+        bottom: 22px;
+        background-color: none;
+        border: 1px solid black;
+        overflow: hidden;
+        margin: 0px;
+    }
+
+    #acceptColor3{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 250px;
+        bottom: 22px;
+        background-color: none;
+        border: 1px solid black;
+        overflow: hidden;
+        margin: 0px;
+    }
+
+    .canvasBlock{
+        width: 650px;
+        height: 600px;
+        border: 1px solid black;
+        display: table;
+        border-spacing: 2px;
+        table-layout: fixed;
+    }
+
+    .forms-and-colors{
+        height: 20px;
+    }
+
+    .colors{
+        display: table-cell;
+        width: 40px;
+        height: 20px;
+        border: 1px solid black;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #red-color{
+        background-color: red;
+    }
+    #blue-color{
+        background-color: blue;
+    }
+    #green-color{
+        background-color: green;
+    }
+
+    #canvas{
+        margin: 20px;
+    }
+
+</style>
+<body>
+   <span>Text <input type="text" id="textField" placeholder="Enter some text" > 
+     <div id="acceptColor"></div>
+   </span>
+
+    <span>Telephone <input type="tel" id="telephoneField" placeholder="Enter mobile number" >
+        <div id="acceptColor1"></div>
+    </span>
+
+   <span>Email <input type="email" id="emailField" placeholder="Enter email" >
+    <div id="acceptColor2"></div>
+   </span>
+
+   <span>URL <input type="url" id="urlField" placeholder="Enter some URL" >
+    <div id="acceptColor3"></div>
+    </span>
+    
+    <input type="button" value="Submit" id="submithBtn">
+    <br> <br> <br>
+
+
+    
+    <div class="canvasBlock">
+        <div class="forms-and-colors">
+            <div class="colors" id="red-color">Red</div>
+            <div class="colors" id="blue-color">Blue</div>
+            <div class="colors" id="green-color">Green</div>
+        </div>
+
+        <div id="easel">
+            <canvas id="canvas" height="540px" width="610px"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

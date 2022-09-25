@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>   
+     <style>
+        .bulb{
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-radius: 50%;
+            margin: 25px auto;
+        };
+
+    </style>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div id="footer", onclick="swap(this)">
+          <h1>Footer</h1>
+        </div>
+        <div id="main", onclick="swap(this)">
+          <p>I am first paragraph</p>
+          <p>I am second paragraph</p>
+          <p>I am last paragraph</p>
+        </div>
+    </div>
+
+<button onclick="color()">Change color</button>
+<br><br>
+
+<button onclick="illuminate()">Start Streetlight</button>
+<div id="streetlight">
+    <div id="redLight", class="bulb"></div>
+    <div id="yellowLight", class="bulb"></div>
+    <div id="greenLight", class="bulb"></div>
+  </div>
+<br><br>
+
+ <button onclick="createTable()">Create table</button>
+  
+</body>
+</html>
